@@ -1,6 +1,49 @@
-div{
-    background-color: green;
-    height: 100px;
-    width: 100px;
-    margin: auto;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main';
+    grid-template-rows: 10vh 90vh;
+}
+header{
+    grid-area: header;
+    background-color: #3a3b36;
+    height: 10vh;
+}
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    'esquerda canvas direita'
+    'esquerda baixo direita';
+    background-color: #313030;
+}
+#esquerda{
+    grid-area: esquerda;
+}
+#meio{
+    grid-area: baixo;
+
+}
+#direita{
+    grid-area: direita;
+}
+.artigo{
+    background-color: #313030;
+}
+#divCanvas{
+    grid-area: canvas;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+canvas{
+    background-color: black;
+    width: 800px;
+    height: auto;
 }

@@ -57,7 +57,13 @@ header > div > img{
     cursor: pointer;
     box-shadow: -1 -1 1 black;
 }
+aside{
+    grid-area: aside;
 
+}
+nav{
+    grid-area: nav;
+}
 form{
     display: flex;
     margin: 20px 30px;
@@ -77,16 +83,24 @@ form{
     border: 1 1 solid black;
 }
 main{
-    background-color: #313030;
     display: grid;
-    margin: 10vh 10vh ;
-    gap: 30px 0;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'aside nav'
+    'aside principal';
+    grid-template-columns: 135px 9fr;
+}
+#divPrincipal{
+    grid-area: principal;
+    background-color: #313030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10vh auto;
+    gap: 25px 30px;
     justify-items: center;
     align-items: center;
 }
-main > img{
-    margin: 0;
-    width: 20vw;
+#divPrincipal > img{
+    cursor: pointer;
 }
