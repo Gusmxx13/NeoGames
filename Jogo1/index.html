@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="text" href="scripts.js">
+    <title>NeoGames</title>
+</head>
+<body>
+    <div id="div" onmouseout="sair()" onmouseenter="destaque()" onclick="clicar()">
+        ola
+    </div>
+    <script>
+        var a = document.getElementById('div')
+        function sair() {
+            a.style.backgroundColor = 'green'
+            a.style.width = '100px'
+        }
+        function destaque(){
+            a.style.width = '200px'
+            a.style.backgroundColor = 'rgba(0, 128, 0, 0.397)'
+        }
+        function clicar(){
+            
+        }
+    </script>
+</body>
+</html>
