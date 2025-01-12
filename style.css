@@ -4,35 +4,47 @@
     margin: 0;
     padding: 0;
 }
+/* #generico{
+    width: 500px;
+    height: 500px;
+    background-color: greenyellow;
+    color: orange;
+} */
 body{
     background-color: #313030;
 }
 header{
     display: grid;
-    grid-template-columns: 12.5fr 12.5fr 50fr ;
+    grid-template-columns: 2.5fr  5fr 2.5fr;
     height: 10vh;
-    background-color: #3a3b36;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.678);
+    background-color: rgba(0, 0, 0, 0.151);
 }
 #div1{
-    width: 25vw;
     height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 0 10px 0 10px;
+}
+#divBotao{
     display: flex;
-    justify-content: space-between;
     
 }
+#divImg{
+    display: flex;
+    align-items: center;
+}
 #menu{
-    margin: calc(5vh - 35px) 2vh 0 2vh;
     border: none;
     padding: none;
-    background-color: #3a3b36;
-    color: white;
+    background: 0;
+    color: rgba(255, 255, 255, 0.678);
     font-size: 26px;
     cursor: pointer;
 }
-header > div > img{
-    height: 80%;
-    margin: 1vh 175px 0px 0px;
-    
+#divImg > img{
+    width: 32px;
+    height: 32px;
 }
 #div2{
     width: 50vw;
@@ -40,26 +52,43 @@ header > div > img{
     text-align: center;
     line-height: 10vh;
     font-family: 'Audiowide';
-    color: #004aad;
+    color: rgba(255, 255, 255, 0.678);
     font-size: 50px;
-    text-shadow: 0 0 10x #004badc5;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.678);
 }
 #div3{
-    margin: 0 0 0 auto;
+    display: flex;
+    justify-content: end;
+    justify-items: center;
+    align-items: center;
 }
 #login{
-    margin: calc(5vh - 8.5px) 1vw 0 0;
-    font-size: 15px;
-    background-color: black;
-    color: white;
-    padding: 3px 15px;
+    font-size: 18px;
+    background-color: #351970;
+    color: rgba(255, 255, 255, 0.678);
+    padding: 5px 15px;
     border-radius: 30px;
     cursor: pointer;
-    box-shadow: -1 -1 1 black;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.466);
+    display: grid;
+    grid-template-areas: 
+    'aside nav'
+    'aside principal';
+    grid-template-columns: auto auto;
 }
 aside{
+    transition: 0.4s;
     grid-area: aside;
-
+    background-color: rgb(19, 18, 18);
+    width: 50px;
+    border-right: 1px solid rgba(255, 255, 255, 0.678);
+    margin: 0px;
+}
+aside:hover{
+    width: 200px;
+    transition: 0.2s;
 }
 nav{
     grid-area: nav;
@@ -82,16 +111,8 @@ form{
     border-radius: 20px;
     border: 1 1 solid black;
 }
-main{
-    display: grid;
-    grid-template-areas: 
-    'aside nav'
-    'aside principal';
-    grid-template-columns: 135px 9fr;
-}
 #divPrincipal{
     grid-area: principal;
-    background-color: #313030;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,5 +123,5 @@ main{
     align-items: center;
 }
 #divPrincipal > img{
-    cursor: pointer;
+    cursor:pointer;
 }
