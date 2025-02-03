@@ -50,10 +50,21 @@ main{
     background-color: #1A1A1A;
 }
 #divCanvas{
+    position: relative;
+    width: 100%;
+    background: url('/CAPAS/shell.jpg') no-repeat center center;
+    background-size: cover;
     grid-area: canvas;
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}#divCanvas::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
 }
 iframe{
     background-color: black;

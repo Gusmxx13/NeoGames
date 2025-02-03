@@ -2,25 +2,25 @@ var hexgl = document.getElementById('hexgl')
 function chamarhexgl(){
     window.open('/hexgl/index.html', '_self')
 }
-hexgl.addEventListener('click', chamarhexgl )
+hexgl.addEventListener('click', chamarhexgl)
 
 var krunker = document.getElementById('krunker')
 function chamarkrunker(){
-    window.open('/krunker/index.html', '_self')
+    window.open('/NeoGames/krunker/index.html', '_self')
 }
-krunker.addEventListener('click', chamarkrunker )
+krunker.addEventListener('click', chamarkrunker)
 
 var shell = document.getElementById('shell')
 function chamarshell(){
     window.open('/shell/index.html', '_self')
 }
-shell.addEventListener('click', chamarshell )
+shell.addEventListener('click', chamarshell)
 
 var venge = document.getElementById('venge')
 function chamarvenge(){
     window.open('/venge/index.html', '_self')
 }
-venge.addEventListener('click', chamarvenge )
+venge.addEventListener('click', chamarvenge)
 
 var worms = document.getElementById('worms')
 function chamarworms(){
@@ -33,4 +33,3 @@ function chamarzombs(){
     window.open('/zombs/index.html', '_self')
 }
 zombs.addEventListener('click', chamarzombs )
-
